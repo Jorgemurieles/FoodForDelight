@@ -1,0 +1,22 @@
+<?php
+error_reporting(0);
+date_default_timezone_set('America/Bogota');
+$hosting = 'localhost';
+$basededatos = 'restaurante';
+$usuariobd = 'root';
+$passbd = '';
+$app_folder = 'app';
+$assets_folder = 'assets';
+$url_site = 'http://localhost/sistema/';
+$sal = 'WbHGZCJa5k';
+define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
+define('BASEPATH', $app_folder);
+define('ASSETSPATH', $assets_folder);
+define('URLSITE', $url_site);
+define('HOSTINGDB', $hosting);
+define('DATABASENAME', $basededatos);
+define('USERDATABASE', $usuariobd);
+define('PASSDATABASE', $passbd);
+define('HOMEPAGE', 'home');
+define('SALT', $sal);
+require_once BASEPATH.'/autoload.php';
